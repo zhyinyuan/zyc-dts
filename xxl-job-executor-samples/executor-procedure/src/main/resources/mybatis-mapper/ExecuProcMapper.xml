@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyc.job.executor.procedure.dao.ProcedureDao">
+
+	<!--select id="queryByProcedure" resultMap="BaseResultMap" statementType="CALLABLE">
+		{call pro1()}
+	</select-->
+
+	<insert  id="insertProcedure" parameterType="java.util.Map"  statementType="CALLABLE">
+		{call ${procName}(
+				#{idParam,jdbcType=VARCHAR,mode=IN},#{nameParam,jdbcType=VARCHAR,mode=IN})}
+
+	</insert >
+
+	<!--获取mysql的存储过程-->
+	<select id="queProcList" resultType="java.util.Map" >
+		select name  from mysql.proc t where db != 'sys';
+	</select>
+
+
+</mapper>

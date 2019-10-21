@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyc.job.admin.dao.JobProcessDao">
+	<!--void save(JobProcess jobProcess);-->
+	<insert id="save" parameterType="com.zyc.job.admin.core.model.JobProcess">
+		insert into xxl_job_process values (#{pid},#{pname},#{pnote},#{pcontext})
+	</insert>
+
+	<!--List<JobProcess> pageList(int start, int length);-->
+	<select id="pageList" resultType="com.zyc.job.admin.core.model.JobProcess">
+		select * from xxl_job_process limit #{param1},#{param2}
+	</select>
+
+	<!--int pageListCount(int start, int length);-->
+	<select id="pageListCount" resultType="java.lang.Integer">
+		select count(*) from xxl_job_process limit #{param1},#{param2}
+	</select>
+
+	<!--JobProcess getJob(String pid);-->
+	<select id="getJob" resultType="com.zyc.job.admin.core.model.JobProcess">
+		select * from xxl_job_process where pid = #{pid}
+	</select>
+
+	<!--void update(JobProcess jobProcess);-->
+	<update id="update" parameterType="com.zyc.job.admin.core.model.JobProcess">
+		update xxl_job_process t set t.pname=#{pname},t.pnote=#{pnote},t.pcontext=#{pcontext}
+			where t.pid=#{pid}
+	</update>
+</mapper>
