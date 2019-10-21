@@ -7,17 +7,17 @@
         <artifactId>zyc-dts</artifactId>
         <version>2.1.1-SNAPSHOT</version>
     </parent>
-    <artifactId>xxl-job-executor-samples</artifactId>
+    <artifactId>dts-executor-samples</artifactId>
     <packaging>pom</packaging>
 
     <modules>
         <module>executor-procedure</module>
-        <module>xxl-job-executor-sample-spring</module>
-        <module>xxl-job-executor-sample-springboot</module>
-        <module>xxl-job-executor-sample-jfinal</module>
-        <module>xxl-job-executor-sample-nutz</module>
-        <module>xxl-job-executor-sample-frameless</module>
-		<module>xxl-job-executor-sample-jboot</module>
+        <module>dts-executor-sample-spring</module>
+        <module>dts-executor-sample-springboot</module>
+        <module>dts-executor-sample-jfinal</module>
+        <module>dts-executor-sample-nutz</module>
+        <module>dts-executor-sample-frameless</module>
+		<module>dts-executor-sample-jboot</module>
     </modules>
 
 </project>

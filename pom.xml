@@ -11,9 +11,9 @@
 	<url>http://www.xuxueli.com/</url>
 
 	<modules>
-		<module>xxl-job-core</module>
-		<module>xxl-job-admin</module>
-		<module>xxl-job-executor-samples</module>
+		<module>dts-core</module>
+		<module>dts-admin</module>
+		<module>dts-executor-samples</module>
     </modules>
 
 	<properties>

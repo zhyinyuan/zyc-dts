@@ -8,16 +8,16 @@
         <version>2.1.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>xxl-job-executor-sample-nutz</artifactId>
+    <artifactId>dts-executor-sample-jfinal</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
-        <!-- nutz -->
+        <!-- jfinal -->
         <dependency>
-			<groupId>org.nutz</groupId>
-			<artifactId>nutz</artifactId>
-			<version>1.r.62</version>
-		</dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>jfinal</artifactId>
+            <version>2.2</version>
+        </dependency>
 
         <!-- slf4j -->
         <dependency>
@@ -26,10 +26,10 @@
             <version>${slf4j-api.version}</version>
         </dependency>
 
-        <!-- xxl-job -->
+        <!-- dts-core -->
         <dependency>
-            <groupId>com.xuxueli</groupId>
-            <artifactId>xxl-job-core</artifactId>
+            <groupId>com.ziyuchen</groupId>
+            <artifactId>dts-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
