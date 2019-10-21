@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ziyuchen</groupId>
-        <artifactId>zyc-dts</artifactId>
+        <artifactId>dts-executor-samples</artifactId>
         <version>2.1.1-SNAPSHOT</version>
     </parent>
     <artifactId>executor-procedure</artifactId>
